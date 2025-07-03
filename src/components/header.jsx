@@ -45,54 +45,54 @@ const Header = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/">
-                <h1 className="text-3xl font-black text-black">SHOP.CO</h1></a>
+              <Link to="/">
+                <h1 className="text-3xl font-black text-black">SHOP.CO</h1></Link>
             </div>
 
 
 
             <nav className="hidden space-x-8 md:flex">
               <div className="relative">
-                <button
-                  onClick={toggleDropdown}
-                  className="flex items-center text-gray-700 transition-colors hover:text-black"
-                >
-                  <a href='/shop'>
-                    Shop</a>
-                  <IoChevronDown size={16} className="ml-1" />
-                </button>
+               <button
+  onClick={toggleDropdown}
+  className="flex items-center text-gray-700 transition-colors hover:text-black"
+>
+  Shop
+  <IoChevronDown size={16} className="ml-1" />
+</button>
+
 
 
 
                 {isDropdownOpen && (
                   <div className="absolute left-0 top-full z-50 mt-2 w-48 bg-white rounded-md border border-gray-200 shadow-lg">
                     <div className="py-2">
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                     <Link to="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         Men's Clothing
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      </Link>
+                    <Link to="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         Women's Clothing
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      </Link>
+                     <Link to="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         Accessories
-                      </a>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      </Link>
+                      <Link to="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         Shoes
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 )}
               </div>
 
-              <a href="#" className="text-gray-700 transition-colors hover:text-black">
+              <Link to="/" className="text-gray-700 transition-colors hover:text-black">
                 On Sale
-              </a>
-              <a href="#" className="text-gray-700 transition-colors hover:text-black">
+              </Link>
+              <Link to="/" className="text-gray-700 transition-colors hover:text-black">
                 New Arrivals
-              </a>
-              <a href="#" className="text-gray-700 transition-colors hover:text-black">
+              </Link>
+        <Link to="/" className="text-gray-700 transition-colors hover:text-black">
                 Brands
-              </a>
+              </Link>
             </nav>
 
 
