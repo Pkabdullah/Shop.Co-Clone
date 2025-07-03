@@ -1,4 +1,4 @@
-"
+"use client"
 import React, { useState, useEffect } from "react";
 import { RiStarSLine, RiCloseLine, RiMenuLine, RiSearchLine } from "react-icons/ri";
 import { setSelectedProduct } from "../RTK/Slice";
